@@ -1,2 +1,2 @@
-# automated-timesheet-python-2022
+# Automated Timesheet Clock in/Clock out using Python & Selenium
 automated timesheet entry using python &amp; selenium

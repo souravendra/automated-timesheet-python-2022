@@ -26,4 +26,11 @@ finally:
     emailbox.send_keys(os.getenv('EMAIL'))
     passwordbox.send_keys(os.getenv('PASSWORD'))
     loginbutton.click()
+
+try:
+    elem = WebDriverWait(driver, 30).until(
+        EC.presence_of_element_located((By.XPATH, 'CLOCK IN/CLOCK OUT BUTTON')))
+finally:
+    clockINbutton = driver.find_element_by_xpath(PATH)
+    clockOUTbutton = driver.find_element_by_xpath(PATH)
     # driver.quit()
